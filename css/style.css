@@ -1,0 +1,673 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+img{
+  width: 100%;
+}
+.container{
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1440px;
+}
+
+p{
+  font-family: Inter;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.1px;
+color: rgba(95, 109, 126, 1);
+}
+.second-header{
+  font-family: Inter;
+font-weight: 600;
+font-size: 32px;
+line-height: 42px;
+letter-spacing: -1%;
+color: rgba(255, 255, 255, 1);
+}
+.primary-600-bg{background-color: rgba(67, 126, 247, 1);}
+.primary-900-bg{background-color: rgba(43, 99, 217, 1);}
+.primary-600{color: rgba(67, 126, 247, 1)!important;}
+.primary-900{color: rgba(43, 99, 217, 1);}
+.color-white{color: rgba(255, 255, 255, 1);}
+.pointer{
+  cursor: pointer;
+}
+.py{
+  padding:4rem 0px;
+}
+.d-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-center{
+  text-align: center;
+}
+.fs-4{
+  font-size: 14px;
+}
+h2{
+font-weight: 600;
+font-size: 32px;
+line-height: 42px;
+letter-spacing: -1%;
+
+}
+/* navbar */
+
+header{
+  background-color: rgba(234, 235, 240, 1);
+border-bottom: 1px solid rgba(234, 235, 240, 1);
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+margin-bottom: 4px;
+}
+nav{
+  padding: 20px 0px;
+color: black;
+align-items: center;
+
+}
+.logo img{
+  padding-right: 32px;
+}
+.nav-items li a{
+  color: black;
+  padding: 0px 32px;
+}
+.nav-items ul{
+  align-items: center;
+}
+.auth-links{
+  margin-left: auto;
+
+}
+.auth-links ul{
+  align-items: center;
+  margin: 0;
+}
+.login{
+padding: 12px 18px;
+border-radius: 6px;
+}
+.SignUp{
+  padding: 0px 24px;
+}
+
+.setting{
+  font-size: 24px;
+  display: none;
+}
+@media screen and (max-width:768px) {
+  nav{justify-content: space-between;}
+ .nav-items,.auth-links{
+    display: none;
+  }
+  .setting{display: inline-block;}
+}
+
+/* hero section */
+.hero{
+  padding: 80px 0px 92px 0px;
+  background-color: rgba(234, 235, 240, 1);
+}
+
+.hero h1{
+font-weight: 700;
+font-size: 52px;
+line-height: 60px;
+letter-spacing: -1%;
+color: rgba(39, 45, 55, 1);
+}
+.hero span{
+  margin-bottom: 1rem;
+font-weight: 600;
+line-height: 20px;
+letter-spacing: -0.1px;
+display: block;
+}
+
+@media screen and (max-width:768px) {
+.hero{
+  padding: 3rem 0px 5.5rem 0px;
+}
+.hero h1{
+
+font-weight: 700;
+font-size: 3.25rem;
+line-height: 60px;
+letter-spacing: -1%;
+
+
+}
+}
+@media screen and (max-width:375px) {
+.hero{
+  padding: 2rem 0px 2.5rem 0px;
+}
+.hero h1{
+font-weight: 600;
+font-size: 36px;
+line-height: 44px;
+letter-spacing: -2%;
+}
+.hero span{
+    margin-bottom: 2rem;
+}
+}
+
+/* subscribe section */
+.subscribe .d-flex{
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.subscribe-content{
+  width: 50%;
+}
+.subscribe-input{
+width: 30%;
+}
+.subscribe p{
+  margin-top: 24px;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: -0.1px;
+color: rgba(177, 204, 251, 1);
+}
+.subscribe span{
+  color: rgba(177, 204, 251, 1);
+  margin-top: 8px;
+  display: inline-block;
+}
+.subscribe form{
+  position: relative;
+  display: flex;
+}
+ input[type=email]{
+ width: 100%;
+  height: 46px;
+padding: 12px 16px;
+border-top-left-radius: 6px;
+border-bottom-left-radius: 6px;
+background-color: rgba(255, 255, 255, 1);
+color: Gray/25;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+letter-spacing: -0.1px;
+border: 0;
+}
+.subscribe form button,footer button{
+   width: 88px;
+height: 46px; 
+padding-top: 12px;
+padding-right: 18px;
+padding-bottom: 12px;
+padding-left: 18px;
+border-top-right-radius: 6px;
+border-bottom-right-radius: 6px;
+
+border: 0;
+position: absolute;
+right: -5px;
+}
+input:focus { outline: 0; }
+
+@media screen and (max-width:768px) {
+  .subscribe{
+    padding: 2.5rem 0px;
+  }
+.subscribe .d-flex{
+  flex-direction: column;
+   justify-content: start;
+}
+.subscribe form{
+  justify-content: start;
+}
+.subscribe-content{
+  width: 100%;
+}
+.subscribe-input{
+  margin-top: 2rem;
+          margin-right: auto;
+  width: 70%;
+}
+.container{
+  width: 90%;
+}
+}
+
+@media screen and (max-width:375px) {
+  .subscribe{
+    padding: 2rem 0px;
+  }
+  .subscribe h2{
+font-weight: 600;
+font-size: 28px;
+line-height: 36px;
+letter-spacing: -2%;
+
+  }
+.subscribe form button{
+ position: static;
+ width: 100%;
+ margin: 1rem 0;
+}
+
+.subscribe-input{
+  margin-top: 2rem;
+  width: 100%;
+}
+.container{
+  width: 90%;
+}
+}
+/* product section */
+.products .row{
+  display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.products-main{
+  width: 55%;
+  margin-right: 40px;
+}
+.products-main h3{
+  margin-top: 24px;
+  margin-bottom: 12px;
+}
+.products-items{
+  width: 55%;
+}
+.products-items .item{
+  display: flex;
+
+align-items: center;
+}
+.my{
+margin: 2rem 0px;
+}
+.products-items .item figure{
+  width: 33.33%;
+  margin-right: 24px;
+}
+.products-items .item figure img{
+    /* max-width: 188px;
+max-height: 118px; */
+border-radius: 10px;
+;
+}
+.products-items .item-content{
+  width: 70%;
+}
+.products h3{
+font-weight: 600;
+font-size: 22px;
+line-height: 30px;
+letter-spacing: -1%;
+color: rgba(39, 45, 55, 1);
+}
+.products p{
+  margin-bottom: 1rem ;
+  margin-top: 4px;
+}
+.products span{
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: -0.1px;
+color: rgba(95, 109, 126, 1);
+}
+
+@media screen and (max-width:768px) {
+.products {
+  padding: 3rem 0rem;
+}
+.products-main{
+  margin: 0;
+  width: 100%;
+}
+.products .row{
+  display: flex;
+flex-direction: column;
+}
+.products-items{
+  width: 100%;
+}
+.products-items img{
+height: 166px;
+}
+.products-items .item{
+margin: 1rem 0rem;
+}
+.reverse{
+  display: flex;
+  flex-direction: column-reverse;
+}
+}
+@media screen and (max-width:375px) {
+.products {
+  padding: 2rem 0rem;
+}
+.products-items .item figure{
+  width: 100%;
+}
+.products-main{
+  margin: 0;
+  width: 100%;
+}
+.products .row{
+flex-direction: column;
+}
+.products-items .item{
+  flex-direction: column;
+}
+.products-items ,.products-items .item-content{
+  width: 100%;
+}
+
+.products-items .item{
+margin: 1rem 0rem;
+}
+.container{
+  width: 95%;
+}
+.item-content{
+  margin: 1.5rem 0rem 2rem 0rem;
+}
+}
+
+/* blog section */
+
+.blog-header{
+  margin-bottom: 64px;
+  position: relative;
+}
+
+.blog-header::after{
+  content: '';
+  background-color: rgba(217, 217, 217, 1);
+  width: 138px;
+height: 5px;
+position: absolute;
+top: 150%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+justify-content: space-between;
+}
+.card{
+  width: 32%;
+  margin-bottom: 24px;
+}
+.card h3{
+  margin-top: 8px;
+  margin-bottom: 16px;
+font-weight: 600;
+font-size: 22px;
+line-height: 30px;
+letter-spacing: -1%;
+color: rgba(39, 45, 55, 1);
+}
+.card span{
+  margin-top: 16px;
+  display: inline-block;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: -0.1px;
+color: rgba(95, 109, 126, 1);
+}
+.card a{
+font-weight: 600;
+font-size: 15px;
+line-height: 22px;
+letter-spacing: 0px;
+color: rgba(67, 126, 247, 1);
+}
+.card a span{
+  margin-left: 0.5rem;
+}
+
+@media screen and (max-width:768px) {
+  .blog{
+    padding: 3rem 0rem;
+  }
+.card{
+  width: 48%;
+  margin: 3rem 0rem;
+}
+.blog-header{
+  margin-bottom: 2rem;
+}
+}
+
+@media screen and (max-width:375px) {
+  .blog{
+    padding: 2rem 0rem;
+  }
+.card{
+  width: 100%;
+  margin: 2rem 0rem;
+}
+.blog-header{
+  margin-bottom: 1.5rem;
+}
+}
+
+/* signUP section */
+.signUp h2{
+  margin-top: 8px;
+  margin-bottom: 32px;
+font-weight: 600;
+font-size: 32px;
+line-height: 42px;
+letter-spacing: -1%;
+}
+.signUp a{
+  background: rgba(255, 255, 255, 1);
+}
+
+
+@media screen and (max-width:768px) {
+.signUp{
+  padding: 2.5rem 0rem;
+}
+}
+@media screen and (max-width:375px) {
+.signUp{
+  padding: 2rem 0rem;
+}
+.signUp h2{
+font-weight: 600;
+font-size: 28px;
+line-height: 36px;
+letter-spacing: -2%;
+  margin-bottom: 1rem;
+}
+.signUp a{
+  width: 100%;
+  display: block;
+}
+}
+/* footer section */
+
+footer{
+  background: rgba(21, 27, 40, 1);
+}
+
+footer .row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 4rem;
+}
+.row .links{
+  width: 20%;
+}
+.row .logo{
+  width: 30%;
+
+}
+footer input[type=email]{
+  background: rgba(44, 52, 68, 1);
+
+height: 46px;
+border: 0;
+width: 100%;
+}
+footer img{
+  max-width: 150px;
+height: 28px;
+}
+footer p{
+  padding: 1rem 0px;
+  color: rgba(165, 172, 186, 1);
+}
+footer form{
+  position: relative;
+}
+.links li{
+  margin: 6px 0px;
+font-weight: 500;
+font-size: 1rem;
+line-height: 24px;
+letter-spacing: -0.1px;
+color: rgba(165, 172, 186, 1);
+cursor: pointer;
+
+}
+
+.copyRight p{
+  padding-top: 2rem;
+  border-top: 1px solid rgba(46, 53, 69, 1);
+  padding-bottom: 0px;
+  
+}
+
+@media screen and (max-width:768px) {
+.row .logo{
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+footer input[type=email]{
+  width: 70%;
+}
+footer .subscribe form button, footer button{
+  right: 100px;
+}
+footer{
+  padding: 2.5rem 0rem 2rem 0rem!important;
+}
+}
+@media screen and (max-width:375px) {
+  footer{
+    padding: 2rem 0rem;
+  }
+.row .logo{
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+footer input[type=email]{
+  width: 100%;
+}
+footer .subscribe form button, footer button{
+  right: 0;
+}
+footer{
+  padding: 2.5rem 0rem 2rem 0rem!important;
+}
+.row .links{
+  width: 45%;
+  margin: 1.5rem 0rem;
+}
+footer .row{
+  padding: 0;
+}
+}
+
